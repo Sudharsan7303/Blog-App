@@ -7,7 +7,7 @@ import Postlist  from './components/PostList';
 
 function App() {
   const [Posts,setposts]=useState([])
-  const [editPost,setEditPost]=useState({})
+  const [editPost,setEditPost]=useState()
   useEffect(()=>{
     fetch('http://127.0.0.1:8000/posts/',{
       'method':'GET',
